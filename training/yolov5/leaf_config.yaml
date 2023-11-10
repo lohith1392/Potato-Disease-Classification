@@ -1,0 +1,4 @@
+train: leaf/images/train
+val: leaf/images/val
+nc: 2
+names: ["Leaf","leaf"]

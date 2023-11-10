@@ -1,0 +1,30 @@
+Version1:
+-> DataSet Size: 4096
+-> DataSet from: "Potato Leaf Disease Dataset from pakistan farm"
+-> Activation function used: "RELU"
+-> CNN model used: "Modified version of VGG"
+-> Kernel size for Convolution: (3,3)
+-> Kernel size for pooling: (2,2)
+-> Type of Pooling: MaxPooling
+-> Number of layers: |-> 12 Convolutional layers
+		     |-> 1 flatten layer
+		     |-> 1 dense layer
+		     |-> 1 softmax layer
+-> Epochs: 50
+-> Dataset divided into: | 80% training
+			 | 10% validation
+			 | 10% testing
+-> batch size: 32
+-> Image is resized into: (256,256,3)
+-> Normalized each pixel between [0,1]
+-> Data Augumentation: | -> Horizontial_and_Vertical_Flip
+		       | -> Image Rotation: 0.2
+-> Optimizer: "Adam"
+-> Accuracy for test data: 98%
+-> Loss for test data: 0.0519
+-> Observation: 
+   1) Seen that the model will almost result the same accuracy even with less number of epochs(35)
+   2) The model perform well when the given image contains only one leaf which is placed on a plane
+      surface
+   3) The model does not perform well when the image contains noise(containing more than one leaf in an image)
+   4) The model does not perform well even when the image contains dark color background.
